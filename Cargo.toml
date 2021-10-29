@@ -1,0 +1,24 @@
+[package]
+name = "backend"
+version = "0.1.0"
+authors = ["Lex Childs <lexchilds@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name="api"
+path="src/lib.rs"
+
+[dependencies]
+actix-web = "4.0.0-beta.10"
+adom = "0.0.5"
+log = "0.4"
+pretty_env_logger = "0.4"
+tokio-postgres = { version="0.7", features=["with-serde_json-1"] }
+postgres-types = { version = "0.2", features = ["derive"] }
+bb8 = "0.7"
+bb8-postgres = "0.7"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+lazy_static = "1.4"
