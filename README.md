@@ -4,7 +4,7 @@
 
 1. get a version of postgres up and running.
 2. update the connection string in ./src/config.rs (alternatively you could just set the ENV Variable )
-3. make sure the DB in the connection string existest `CREATE DATABASE BLA;`
+3. make sure the DB in the connection string exists `CREATE DATABASE BLA;`
 4. migrate the database to create the orders table and mock data
 
 ```
